@@ -1,4 +1,4 @@
-How to delay the side effect of an input.
+# Delay the side effect of an input.
 
 Declare the input & side effect in state
 ```
