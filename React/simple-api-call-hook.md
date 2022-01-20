@@ -32,6 +32,9 @@ export default function useFetch(url) {
 ```
 
 Example usage
+
+```
 const { data: products, loading, error } = useFetch(
 "products?category=shoes"
 );
+```
