@@ -2,7 +2,7 @@
 
 This simple hook manages the data, errir state and loading state
 
-```
+```jsx
 export default function useFetch(url) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -33,7 +33,7 @@ export default function useFetch(url) {
 
 Example usage
 
-```
+```jsx
 const { data: products, loading, error } = useFetch(
 "products?category=shoes"
 );

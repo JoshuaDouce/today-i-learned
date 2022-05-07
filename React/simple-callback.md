@@ -1,6 +1,6 @@
 # Using simple callbacks
 
-Simple example of making use of a callback in react to pass data up and down the component tree. 
+Simple example of making use of a callback in react to pass data up and down the component tree.
 
 Pass function down component tree </br>
 Component A -> Component B -> Component C </br>
@@ -9,7 +9,8 @@ When component A finishes executing function callBack function is called </br>
 Component C executes callback function.
 
 Function with callback function as parameter defined at the top level. passed to child component with callback as a parameter.
-```
+
+```jsx
 function ComponentA(){
     const [counter, setCounter] = useState(0);
 
@@ -32,7 +33,8 @@ function ComponentA(){
 ```
 
 Here to just highlight the function flowing from parent to child
-```
+
+```jsx
 function ComponentB(){
     return(
     <div>
@@ -45,7 +47,7 @@ function ComponentB(){
 
 Component C defines the callback function to be called and passes that to the Function to be called
 
-```
+```jsx
 function ComponentC(){
     const [updating, setUpdating] = useState(false);
 

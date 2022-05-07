@@ -1,6 +1,6 @@
 # Simple custom delegate
 
-```
+```csharp
 WorkPerformedHandler del1 = new(WorkPerformed);
 WorkPerformedHandler del2 = new(WorkPerformed3);
 

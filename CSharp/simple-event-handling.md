@@ -1,6 +1,6 @@
 # Simple event raised & handled
 
-```
+```csharp
 static void Main(string[] args)
         {
             var worker = new Worker();

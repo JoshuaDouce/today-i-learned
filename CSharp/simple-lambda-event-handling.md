@@ -1,6 +1,6 @@
 # Lambda Event Handler
 
-```
+```csharp
 var worker = new Worker();
 worker.WorkPerformed += (s, e) =>
 {

@@ -1,6 +1,6 @@
 # Example of the Mediator pattern
 
-```
+```csharp
 internal sealed class Mediator
     {
         //Singleton

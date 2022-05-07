@@ -1,6 +1,6 @@
 # React Router
 
-```
+```jsx
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
 
 ```
 
-```
+```jsx
 import { useParams, useNavigate } from "react-router-dom";
 
 export default function Detail() {

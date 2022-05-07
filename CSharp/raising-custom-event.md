@@ -1,6 +1,6 @@
 # Raising custom event
 
-```
+```csharp
 public delegate void WorkPerformedHandler(int hours);
     public class Worker
     {

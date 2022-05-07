@@ -1,6 +1,8 @@
 # React Error Boundary
+
 Error boundary using react class component
-```
+
+```jsx
 export default class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +26,8 @@ export default class ErrorBoundary extends React.Component {
 ```
 
 Example Usage
-```
+
+```jsx
 ReactDOM.render(
   <ErrorBoundary>
     <App />
@@ -36,6 +39,7 @@ ReactDOM.render(
 Now you can throw an error in any child component of the error boundary and it will handle the error. 
 
 Note - Error boundaries do not catch errors for:
+
 - Event handlers (learn more)
 - Asynchronous code (e.g. setTimeout or requestAnimationFrame callbacks)
 - Server side rendering

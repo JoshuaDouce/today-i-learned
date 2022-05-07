@@ -1,6 +1,6 @@
 # Use fetch all
 
-```
+```jsx
 import { useState, useEffect } from "react";
 
 export default function useFetchAll(urls) {

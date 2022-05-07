@@ -1,13 +1,15 @@
-# Delay the side effect of an input.
+# Delay the side effect of an input
 
 Declare the input & side effect in state
-```
+
+```jsx
 const [password, setPassword] = useState('');
 const [passwordInvalid, setPasswordInvalid] = useState(!isValid(password) && password !== '');
 ```
 
 In use effect declare a timeout and the side effect state update. Pass input as parameter to use effect to ensure it only re-renders on updates to that state value.
-```
+
+```jsx
 useEffect(() => {
     const evaluateInputTimeout = setTimeout(() => {
       setPasswordInvalid(!isValid(password) && password !== '');

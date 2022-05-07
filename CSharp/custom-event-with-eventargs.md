@@ -1,6 +1,6 @@
 # Custom event with custom event args
 
-```
+```csharp
 public class Worker
     {
         public event EventHandler<WorkPerformedEventArgs>? WorkPerformed;

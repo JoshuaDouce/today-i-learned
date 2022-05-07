@@ -2,7 +2,8 @@
 
 Create a custom context that allows the getting and setting of the theme. Keep
 this context in a sperate file i.e 'Seperation of Concerns'.
-```
+
+```jsx
 export const ThemeContext = createContext();
 
 function ThemeProvider({ children, startingTheme }) {
@@ -16,8 +17,9 @@ function ThemeProvider({ children, startingTheme }) {
 }
 ```
 
-This component renders the base for the layout with the theme. But does not use the wrapping provider. This is because it would try to access the context before it is instantiaited. Therefore, we set the layout without the provider in a seperate component. 
-```
+This component renders the base for the layout with the theme. But does not use the wrapping provider. This is because it would try to access the context before it is instantiaited. Therefore, we set the layout without the provider in a seperate component.
+
+```jsx
 function LayoutNoThemeProvider({ children }) {
   const { theme } = useContext(ThemeContext);
 
@@ -34,7 +36,8 @@ function LayoutNoThemeProvider({ children }) {
 ```
 
 This wraps the no theme provider layout as this component will instantiate the context before rendering its children. Therefore, avoiding a no context defined exception
-```
+
+```jsx
 function Layout({ startingTheme, children }) {
   return (
     <ThemeProvider startingTheme={startingTheme}>
