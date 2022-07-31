@@ -1,6 +1,6 @@
 # A Simple react hook for calling API's
 
-This simple hook manages the data, errir state and loading state
+This simple hook manages the data, error state and loading state
 
 ```jsx
 export default function useFetch(url) {
