@@ -1,0 +1,26 @@
+# Modern Software Engineering - What is Engineering?
+
+- Precision and Scalability
+  - Ability to run large automated test suites at speed. How? 
+    - Parallelization
+    - Distributed testing
+    - Cloud-based testing
+- Managing Complexity
+  - Software is complex. How to manage it?
+    - Abstraction
+    - Modularization
+    - Encapsulation
+    - Separation of concerns
+- Repeatabily and Accuracy
+  - How to ensure that software is repeatable and accurate?
+    - Automation
+    - Continuous Integration
+    - Continuous Deployment
+    - Gather metrics
+    - Monitor and analyze
+- Trade Offs
+  - Highly secure software may not be user-friendly
+  - Highly scalable software may not be easy to maintain
+  - More people more communication overhead
+  - Coupling and Cohesion
+- Software
