@@ -23,7 +23,7 @@
   - Connects sources to targets with a point-to-point integration
   - Supporting event filtering, transformations, enrichment and delivery to multiple AWS services
   - External HTTPS based targets using API Destinations
-  - Prefered by AWS and easiest way to integrate Kafka with EventBridge
+  - Preferred by AWS and easiest way to integrate Kafka with EventBridge
 - When to choose EventBridge sink connector
   - Already invested in processes and tooling around the Kafka Connect framework
   - Integrating with a Kafka-compatible schema registry e.g., the AWS Glue Schema Registry,
@@ -43,4 +43,4 @@ The workflow consists of the following steps:
 
 For detailed steps, see the [article](https://aws.amazon.com/blogs/big-data/build-event-driven-architectures-with-amazon-msk-and-amazon-eventbridge/).
 
-[//]: # (Todo work through the stepas in article and create a demo)
+[//]: # (Todo work through the steps in article and create a demo)

@@ -38,6 +38,7 @@ Event streaming is
   - Value
   - Timestamp
   - Metadata headers (optional)
+- **Broker** a server that manages and distributes events, stores and serves data to consumers.
 - **Producers** are those client applications that publish (write) events to Kafka
 - **Consumers** are those that subscribe to (read and process) these events
   - Kafka provides various guarantees such as the ability to process events exactly-once.
@@ -50,7 +51,7 @@ Event streaming is
   - Distributed placement of your data is very important for scalability because it allows client applications to both read and write the data from/to many brokers at the same time.
   - Events with the same event key (e.g., a customer or vehicle ID) are written to the same partition.
   - Kafka guarantees that any consumer of a given topic-partition will always read that partition's events in exactly the same order as they were written.
-  - Every topic can be **replicated**, even across geo-regions or datacenters.
+  - Every topic can be **replicated**, even across geo-regions or data-centers.
 
 ## Kafka APIs
 -  **Admin API** to manage and inspect topics, brokers, and other Kafka objects.
