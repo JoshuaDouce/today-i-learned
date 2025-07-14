@@ -6,6 +6,14 @@ Kubernetes is an open source container orchestrator.
 
 1. **Container Orchestration**
    - **Why Desirable**: Automates the deployment, scaling, and management of containerized applications, simplifying workflows and resource management.
+   - **Why Containerized Applications**:
+     - ***Portability***: Containers can run consistently across different environments, from development to production (Run Everywhere).
+     - ***Isolation***: Containers encapsulate applications and their dependencies, ensuring they run in isolation without conflicts.
+     - ***Lightweight***: Containers share the host OS kernel, making them more resource-efficient compared to traditional virtual machines.
+     - ***Scalability***: Containers can be easily scaled up or down based on demand, allowing for efficient resource utilization.
+     - ***Simplified CI/CD***: Containers streamline continuous integration and deployment processes, enabling faster development cycles and easier rollbacks. Use tools like Flux/ArgoCD for GitOps workflows.
+     - ***Ecosystem Support***: Containers have a rich ecosystem with tools for monitoring, logging, and security, enhancing operational capabilities.
+     - ***Security(When managed correctly)***: Containers can be isolated from each other, reducing the attack surface and improving security posture. 
 
 2. **Scalability**
    - **Why Desirable**: Enables automatic scaling of applications up or down based on demand, ensuring efficient resource use and maintaining performance during peak loads.
@@ -36,15 +44,17 @@ Kubernetes is an open source container orchestrator.
 
 # Introduction
 
-- Node (machine or VM) is the smallest unit in Kubernetes. A node can be a physical machine or a virtual machine.
 - Kubernetes cluster is a set of nodes grouped together.
+- Node (machine or VM) is the smallest unit in Kubernetes. A node can be a physical machine or a virtual machine.
 - As long as the cluster has sufficient resources, it can run any containerized application.
 - Pods (a container) are the smallest deployable units in Kubernetes. A Pod represents a single instance of a running process in your cluster. 
+  - Pods are transient and can be created, destroyed, and replicated dynamically.
   - Pods have a unique IP address within the cluster.
   - Pods can communicate with other pods, regardless of which host they run on.
-  - Pods can be created, destroyed, and replicated dynamically.
   - New pods created with new versions of your application can replace older ones.
 - A service is a logical set of pods that provide the same functionality.
 - Namespaces are a way to divide cluster resources between multiple users.
 - Kind is a way to group resources together. For example, a Pod is a kind of resource.
 - Deployment is a way to manage the lifecycle of pods and are per service.
+- You can create a pod from the command line, this is called a static pod. However, it is recommended to use a deployment to manage pods.
+- 'Deployments' are per service and manage the lifecycle of pods.
